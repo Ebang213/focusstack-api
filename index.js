@@ -18,7 +18,7 @@ let products = [
     id: 2,
     name: "Time Timer MOD",
     description: "A visual timer that helps with time blindness.",
-    url: "https://amzn.to/4lRWlSl",
+    url: "https://amzn.to/3ImReuX",
     image: "https://m.media-amazon.com/images/I/61eZfGqKTVL._AC_SL1500_.jpg"
   },
   {
