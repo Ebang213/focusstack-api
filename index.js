@@ -11,7 +11,7 @@ let products = [
     id: 1,
     name: "Noise-Canceling Headphones",
     description: "Block out distractions and improve focus.",
-    url: "https://amzn.to/45YK4qs",
+    url: "https://bit.ly/4eJQz2F",
     image: "https://m.media-amazon.com/images/I/71o8Q5XJS5L._AC_SL1500_.jpg"
   },
   {
