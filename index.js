@@ -18,21 +18,21 @@ let products = [
     id: 2,
     name: "Time Timer MOD",
     description: "A visual timer that helps with time blindness.",
-    url: "https://amzn.to/3example2",
+    url: "https://amzn.to/4lRWlSl",
     image: "https://m.media-amazon.com/images/I/61eZfGqKTVL._AC_SL1500_.jpg"
   },
   {
     id: 3,
-    name: "Notion Productivity Template",
-    description: "Organize your tasks, goals, and routines in one neurodivergent-friendly dashboard.",
-    url: "https://gumroad.com/l/focusstacktemplate",
-    image: "https://via.placeholder.com/150"
+    name: "ADHD Life Planner (Notion + PDF)",
+    description: "A comprehensive planner designed for ADHD brains—routines, habit trackers, and focus boards in one place.",
+    url: "https://jnkxstudio.gumroad.com/l/ADHD_Life_Planner1?partner=543269011",
+    image: "https://public-files.gumroad.com/t5at5y3rt2kx999tnfm3gu4zx7rj"
   },
   {
     id: 4,
     name: "Fidget Cube",
     description: "Helps stay focused during meetings or deep work.",
-    url: "https://amzn.to/3example4",
+    url: "https://amzn.to/4lra2I0",
     image: "https://m.media-amazon.com/images/I/61S8V4T9exL._AC_SL1500_.jpg"
   }
 ];
