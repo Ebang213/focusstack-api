@@ -18,7 +18,7 @@ let products = [
     id: 2,
     name: "Time Timer MOD",
     description: "A visual timer that helps with time blindness.",
-    url: "https://amzn.to/3ImReuX",
+    url: "http://bit.ly/44r2YFd",
     image: "https://m.media-amazon.com/images/I/61eZfGqKTVL._AC_SL1500_.jpg"
   },
   {
@@ -32,7 +32,7 @@ let products = [
     id: 4,
     name: "Fidget Cube",
     description: "Helps stay focused during meetings or deep work.",
-    url: "https://amzn.to/4lra2I0",
+    url: "http://bit.ly/467dbb8",
     image: "https://m.media-amazon.com/images/I/61S8V4T9exL._AC_SL1500_.jpg"
   }
 ];
