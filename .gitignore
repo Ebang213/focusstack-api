@@ -1,0 +1,11 @@
+node_modules
+# Node and build artifacts
+node_modules/
+**/node_modules/
+build/
+dist/
+*.log
+
+# IDE / OS
+.vscode/
+.DS_Store
