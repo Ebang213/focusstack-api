@@ -1,0 +1,57 @@
+name: Build Frontend
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - 'focusstack-frontend/**'
+      - '.github/workflows/frontend-ci.yml'
+  pull_request:
+    branches: [ main ]
+    paths:
+      - 'focusstack-frontend/**'
+      - '.github/workflows/frontend-ci.yml'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    # Everything we run is inside the frontend folder
+    defaults:
+      run:
+        working-directory: focusstack-frontend
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Use Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+          cache: npm
+          cache-dependency-path: focusstack-frontend/package-lock.json
+
+      - name: Install deps
+        run: npm ci
+
+      - name: Lint (if present)
+        run: npm run lint --if-present
+
+      - name: Test (if present)
+        run: npm test -- --watch=false --if-present
+
+      - name: Build
+        env:
+          CI: true
+        run: npm run build
+
+      - name: Upload build artifact
+        if: success()
+        uses: actions/upload-artifact@v4
+        with:
+          name: frontend-build
+          path: focusstack-frontend/build
